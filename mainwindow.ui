@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>1031</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Текстовый редактор</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="minimumSize">
+         <size>
+          <width>800</width>
+          <height>900</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>800</width>
+          <height>900</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="open_file"/>
+    <addaction name="new_file"/>
+    <addaction name="save_file"/>
+    <addaction name="save_as"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="Undo"/>
+    <addaction name="Redo"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="Bold"/>
+   <addaction name="underlined"/>
+   <addaction name="italic"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="AlignLeft"/>
+   <addaction name="AlignCenter"/>
+   <addaction name="AlignRight"/>
+   <addaction name="AlignWidth"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="new_file">
+   <property name="text">
+    <string>Создать новый файл</string>
+   </property>
+  </action>
+  <action name="save_file">
+   <property name="text">
+    <string>Сохранить файл</string>
+   </property>
+  </action>
+  <action name="save_as">
+   <property name="text">
+    <string>Сохранить файл как...</string>
+   </property>
+  </action>
+  <action name="open_file">
+   <property name="text">
+    <string>Открыть файл</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::AboutQtRole</enum>
+   </property>
+  </action>
+  <action name="Bold">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myres/img/bold.png</normaloff>:/myres/img/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Полужирный</string>
+   </property>
+   <property name="toolTip">
+    <string>Полужирный</string>
+   </property>
+  </action>
+  <action name="underlined">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myres/img/underlined.png</normaloff>:/myres/img/underlined.png</iconset>
+   </property>
+   <property name="text">
+    <string>Подчеркнутый</string>
+   </property>
+   <property name="toolTip">
+    <string>Подчеркнутый</string>
+   </property>
+  </action>
+  <action name="italic">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myres/img/italic.png</normaloff>:/myres/img/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Курсив</string>
+   </property>
+   <property name="toolTip">
+    <string>Курсив</string>
+   </property>
+  </action>
+  <action name="Undo">
+   <property name="text">
+    <string>Назад</string>
+   </property>
+   <property name="toolTip">
+    <string>Отменит действие</string>
+   </property>
+  </action>
+  <action name="Redo">
+   <property name="text">
+    <string>Вперед</string>
+   </property>
+  </action>
+  <action name="AlignLeft">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/alignleft.png</normaloff>:/img/alignleft.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выровнять по левому краю</string>
+   </property>
+   <property name="toolTip">
+    <string>Выровнять по левому краю</string>
+   </property>
+  </action>
+  <action name="AlignCenter">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/aligncenter.png</normaloff>:/img/aligncenter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выровнять по центру</string>
+   </property>
+   <property name="toolTip">
+    <string>Выровнять по центру</string>
+   </property>
+  </action>
+  <action name="AlignRight">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/alignright.png</normaloff>:/img/alignright.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выровнять по правому краю</string>
+   </property>
+   <property name="toolTip">
+    <string>Выровнять по правому краю</string>
+   </property>
+  </action>
+  <action name="AlignWidth">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/alignwidth.png</normaloff>:/img/alignwidth.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выровнять по ширине</string>
+   </property>
+   <property name="toolTip">
+    <string>Выровнять по ширине</string>
+   </property>
+  </action>
+  <action name="toUpper">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/toUpper.png</normaloff>:/img/toUpper.png</iconset>
+   </property>
+   <property name="text">
+    <string>Надстрочный знак</string>
+   </property>
+   <property name="toolTip">
+    <string>Вывод текста верхним индексом</string>
+   </property>
+  </action>
+  <action name="toLower">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/toLower.png</normaloff>:/img/toLower.png</iconset>
+   </property>
+   <property name="text">
+    <string>Подстрочный знак</string>
+   </property>
+   <property name="toolTip">
+    <string>Вывод текста нижним индексом</string>
+   </property>
+  </action>
+  <action name="UpperCase">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/UpperCase.png</normaloff>:/img/UpperCase.png</iconset>
+   </property>
+   <property name="text">
+    <string>Верхний регистр</string>
+   </property>
+   <property name="toolTip">
+    <string>Перевод текста в верхний регистр</string>
+   </property>
+  </action>
+  <action name="LowerCase">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/LowerCase.png</normaloff>:/img/LowerCase.png</iconset>
+   </property>
+   <property name="text">
+    <string>Нижний регистр</string>
+   </property>
+   <property name="toolTip">
+    <string>Перевод текста в нижний регистр</string>
+   </property>
+  </action>
+  <action name="increase_indent">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/indent_toright.png</normaloff>:/img/indent_toright.png</iconset>
+   </property>
+   <property name="text">
+    <string>Увеличить отступ</string>
+   </property>
+   <property name="toolTip">
+    <string>Увеличение расстояния от поля до абзаца</string>
+   </property>
+  </action>
+  <action name="decrease_indent">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/indent_toleft.png</normaloff>:/img/indent_toleft.png</iconset>
+   </property>
+   <property name="text">
+    <string>Уменьшить отступ</string>
+   </property>
+   <property name="toolTip">
+    <string>Уменьшить расстояние от поля до абзаца</string>
+   </property>
+  </action>
+  <action name="indent edit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myres/img/indent_edit.png</normaloff>:/myres/img/indent_edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Настройка отступов</string>
+   </property>
+   <property name="toolTip">
+    <string>Настройка отступов</string>
+   </property>
+  </action>
+  <action name="insert_image">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myres/img/insert_image.png</normaloff>:/myres/img/insert_image.png</iconset>
+   </property>
+   <property name="text">
+    <string>Вставить изображение</string>
+   </property>
+   <property name="toolTip">
+    <string>Вставить изображение</string>
+   </property>
+  </action>
+  <action name="normal_baseline">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myres/img/normal_font.png</normaloff>:/myres/img/normal_font.png</iconset>
+   </property>
+   <property name="text">
+    <string>нормальный шрифт</string>
+   </property>
+   <property name="toolTip">
+    <string>Шрифт в верхнем и нижнем индексе становится нормальным</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

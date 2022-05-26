@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/myres">
+        <file>img/underlined.png</file>
+        <file>img/bold.png</file>
+        <file>img/italic.png</file>
+        <file>img/indent_edit.png</file>
+        <file>img/lineSpacing (2).png</file>
+        <file>img/verticalIndents.png</file>
+        <file>img/insert_image.png</file>
+        <file>img/normal_font.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>img/aligncenter.png</file>
+        <file>img/alignleft.png</file>
+        <file>img/alignright.png</file>
+        <file>img/alignwidth.png</file>
+        <file>img/textcolor.png</file>
+        <file>img/backgroundcolor.png</file>
+        <file>img/blue.png</file>
+        <file>img/green.png</file>
+        <file>img/rainbow.png</file>
+        <file>img/red.png</file>
+        <file>img/yellow.png</file>
+        <file>img/black (2).png</file>
+        <file>img/white.png</file>
+        <file>img/toLower.png</file>
+        <file>img/toUpper.png</file>
+        <file>img/LowerCase.png</file>
+        <file>img/UpperCase.png</file>
+        <file>img/markers.png</file>
+        <file>img/square.png</file>
+        <file>img/marker2.png</file>
+        <file>img/marker3.png</file>
+        <file>img/list123.jpg</file>
+        <file>img/list_abc.png</file>
+        <file>img/list_i.png</file>
+        <file>img/list_I_II_III.png</file>
+        <file>img/list_ABC).png</file>
+        <file>img/list.png</file>
+        <file>img/indent_toleft.png</file>
+        <file>img/indent_toright.png</file>
+    </qresource>
+</RCC>
